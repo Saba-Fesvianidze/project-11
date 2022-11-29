@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b05f4c9c1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        *{box-sizing:border-box;}
+        body{
+            font-family: "Raleway", Arial, sans-serif;
+        }
+        .wrapper{
+            max-width:1500px;
+            margin:auto;
+        }
+        .header{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+        }
+        .nav{
+            list-style:none;
+            padding:0;
+            margin:0;
+            border:1px solid #ccc;
+            overflow: hidden;
+
+        }
+        .nav li{
+            float:left;
+            width:80px;
+        }
+        .nav li a{
+            display: block;
+            text-decoration: none;
+            color:#aaa;
+            padding: 7px;
+            text-align:center;
+        }
+        .nav #active{
+            background-color:#ddd;
+        }
+        .nav li:hover:not(#active){
+            background-color:grey;
+        }
+        .wrapper h2,.wrapper h1{
+            color:#aaa;
+        }
+        .imgflex{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap:10px;
+            margin-top:130px;
+        }
+        .imgflex .left,.imgflex .right{
+            flex:50%;
+        }
+        .imgflex img{
+            opacity:0.6;
+            transition: 0.7s ease;
+        }
+        .imgflex img:hover{
+            opacity:1;
+        }
+        .footer{
+            background-color:grey;
+            padding:100px;
+        }
+        .footer .nav2{
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .footer .nav2 i{
+            font-size:24px;
+            margin-right:13px;
+        }
+        .footer .nav2 i:hover{
+            color:white;
+        }
+        .footer p{
+            text-align: center;
+            color:white;
+        }
+        .footer p a{
+            text-decoration: none;
+            color:white;
+            transition:0.7s ease;
+        }
+        .footer p a:hover{
+            color:crimson;
+        }
+        @media only screen and (max-width:600px){
+            .imgflex{
+                flex-direction: column;
+            }
+            .footer{
+                padding:50px;
+                transition:1s ease;
+            }
+        }
+    </style>
+
+    <div class="wrapper">
+        <div class="header">
+            <h2>PHOTOGRAPHER</h2>
+            <h1>John Doe</h1>
+            <div class="nav">
+                <li><a href="#">Home</a></li>
+                <li id="active"><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Weddings</a></li>
+            </div>
+        </div>
+
+        <div class="imgflex">
+            <div class="left">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/wedding.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/rocks.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/falls2.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/paris.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/nature.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/mist.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/paris.jpg">
+            </div>
+            <div class="right">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/underwater.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/ocean.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/wedding.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/mountainskies.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/rocks.jpg">
+                <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/underwater.jpg">
+            </div>
+        </div><br><br>
+
+        <div class="footer">
+            <div class="nav2">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Created by <a href="#">Saba Fesvianidze</a></p>
+        </div>
+
+    </div>
+   
+
+</body>
+</html>
